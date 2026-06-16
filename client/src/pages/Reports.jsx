@@ -16,7 +16,7 @@ if (!isAdmin) {
 const fetchVolunteers = async () => {
   try {
     const response = await fetch(
-      "http://localhost:5000/api/volunteers"
+      "https://volunteer-management-system-y8ty.onrender.com/api/volunteers"
     );
 
     const data = await response.json();
