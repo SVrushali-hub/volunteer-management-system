@@ -60,7 +60,7 @@ function VolunteerRegistration() {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/api/volunteers", {
+      const response = await fetch("https://volunteer-management-system-y8ty.onrender.com/api/volunteers", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
