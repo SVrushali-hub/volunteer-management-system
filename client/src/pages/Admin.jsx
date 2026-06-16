@@ -13,7 +13,7 @@ function Admin() {
 
   const fetchVolunteers = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/volunteers");
+      const response = await fetch("https://volunteer-management-system-y8ty.onrender.com/api/volunteers");
 
       const data = await response.json();
 
@@ -33,7 +33,7 @@ function Admin() {
     if (!confirmDelete) return;
 
     try {
-      await fetch(`http://localhost:5000/api/volunteers/${id}`, {
+      await fetch(`https://volunteer-management-system-y8ty.onrender.com/api/volunteers/${id}`, {
         method: "DELETE",
       });
 
@@ -45,7 +45,7 @@ function Admin() {
 
   const approveVolunteer = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/volunteers/${id}/approve`, {
+      await fetch(`https://volunteer-management-system-y8ty.onrender.com/api/volunteers/${id}/approve`, {
         method: "PUT",
       });
 
@@ -57,7 +57,7 @@ function Admin() {
 
   const rejectVolunteer = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/volunteers/${id}/reject`, {
+      await fetch(`https://volunteer-management-system-y8ty.onrender.com/api/volunteers/${id}/reject`, {
         method: "PUT",
       });
 
