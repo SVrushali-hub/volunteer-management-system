@@ -95,7 +95,11 @@ npm start
 * Volunteer Attendance Tracking
 * Campaign Management
 * Role-Based Access Control
+  
+## Admin Credentials (For Evaluation)
 
+Email: admin@nayepankh.org
+Password: admin123
 ## Author
 
 **Vrushali Sakpal**
